@@ -56,6 +56,7 @@ const brokerColors: Record<string, string> = {
   "Sarah Kim": "bg-[#F59E0B]",
   "Jane Mitchell": "bg-[#8B5CF6]",
   "David Park": "bg-[#10B981]",
+  "Rachel Kim": "bg-[#EC4899]",
 }
 
 function initials(name: string) {

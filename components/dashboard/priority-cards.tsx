@@ -58,7 +58,7 @@ export function PriorityCards() {
           AI-generated action items
         </p>
       </div>
-      <div className="grid grid-cols-1 gap-3 md:grid-cols-2 xl:grid-cols-4">
+      <div className="grid grid-cols-1 gap-3 md:grid-cols-2 xl:grid-cols-3">
         {priorities.map((item, idx) => {
           const config = typeConfig[item.type]
           const Icon = config.icon

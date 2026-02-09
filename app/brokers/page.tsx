@@ -54,6 +54,7 @@ const avatarColors: Record<string, string> = {
   "Tom Bradley": "#3B82F6",
   "Sarah Kim": "#F59E0B",
   "David Park": "#10B981",
+  "Rachel Kim": "#EC4899",
 }
 
 /* ── Page ─────────────────────────────────────────────────────── */
