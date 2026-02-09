@@ -1,14 +1,14 @@
 "use client"
 
 import Link from "next/link"
-import { ArrowRight, BarChart3, AlertTriangle, CircleAlert, User, FileText } from "lucide-react"
+import { ArrowRight, BarChart3, PartyPopper, CheckCircle2, CalendarDays, User, Wrench, ClipboardList } from "lucide-react"
 import { submissions } from "@/lib/data"
 
 /* ── Compute stats from real data ─────────────────────────────────── */
 
 const totalOpen = submissions.length
-const needAttention = submissions.filter((s) => s.riskStatus === "yellow").length
-const atRisk = submissions.filter((s) => s.riskStatus === "red").length
+const onTrack = submissions.filter((s) => s.riskStatus === "green").length
+const needsAttention = totalOpen - onTrack
 
 /* ── Briefing items ───────────────────────────────────────────────── */
 
@@ -26,40 +26,56 @@ const briefingItems: BriefingItem[] = [
     id: "b1",
     icon: BarChart3,
     iconColor: "text-blue-500",
-    text: `You have ${totalOpen} open cases \u2014 ${needAttention} need attention, ${atRisk} are at risk`,
-    actionLabel: "View cases needing attention",
+    text: `You have ${totalOpen} open cases \u2014 ${onTrack} are on track, ${needsAttention} could use your attention`,
+    actionLabel: "View full pipeline",
     actionHref: "/submissions",
   },
   {
     id: "b2",
-    icon: AlertTriangle,
-    iconColor: "text-red-500",
-    text: "ABC Corporation quote expires Friday. Loss runs still missing.",
-    actionLabel: "Call broker Jane Mitchell",
-    actionHref: "/submissions/s1",
+    icon: PartyPopper,
+    iconColor: "text-emerald-500",
+    text: "Coastal Condo is ready to bind! Payment received this morning.",
+    actionLabel: "Complete binding",
+    actionHref: "/submissions/s10",
   },
   {
     id: "b3",
-    icon: CircleAlert,
-    iconColor: "text-red-500",
-    text: "2 files blocked in Loss Control \u2014 both waiting on insured callbacks. Mike Reynolds is at capacity. Consider reassigning.",
+    icon: CheckCircle2,
+    iconColor: "text-emerald-500",
+    text: "Greenleaf Hosp LC survey came back clean \u2014 no deficiencies. File is ready for UW final review.",
+    actionLabel: "View file",
+    actionHref: "/submissions/s5",
+  },
+  {
+    id: "b4",
+    icon: CalendarDays,
+    iconColor: "text-blue-500",
+    text: "ABC Corporation quote expires Friday \u2014 worth a quick check-in with Jane Mitchell to see if she needs anything to move forward.",
+    actionLabel: "Draft a friendly nudge",
+    actionHref: "/submissions/s3",
+  },
+  {
+    id: "b5",
+    icon: User,
+    iconColor: "text-blue-500",
+    text: "It\u2019s been a couple weeks since you caught up with Rachel Kim \u2014 she always brings good accounts. Might be nice to check in and see how things are going.",
+    actionLabel: "Say hello",
+    actionHref: "/brokers",
+  },
+  {
+    id: "b6",
+    icon: Wrench,
+    iconColor: "text-amber-500",
+    text: "Heads up: 2 files are waiting on insured callbacks in Loss Control. Mike Reynolds is juggling a few things \u2014 may want to check if he needs help.",
     actionLabel: "View LC queue",
     actionHref: "/queue",
   },
   {
-    id: "b4",
-    icon: User,
-    iconColor: "text-amber-500",
-    text: "You haven't connected with Rachel Kim (Brown & Brown) in 14 days. She has 2 active files with you.",
-    actionLabel: "Send a check-in",
-    actionHref: "/brokers",
-  },
-  {
-    id: "b5",
-    icon: FileText,
-    iconColor: "text-amber-500",
-    text: "Westfield Props needs UW sign-off by Wednesday or binding authority expires.",
-    actionLabel: "Escalate to Robert Chen",
+    id: "b7",
+    icon: ClipboardList,
+    iconColor: "text-blue-500",
+    text: "Westfield Props is almost there \u2014 just needs Robert Chen\u2019s sign-off by Wednesday to lock in the bind.",
+    actionLabel: "Send Robert a reminder",
     actionHref: "/submissions/s4",
   },
 ]
