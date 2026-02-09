@@ -33,14 +33,6 @@ const stageConfig: Record<
   },
 }
 
-/* ── Left border color by risk status ────────────────────────────── */
-
-const borderByRisk: Record<RiskStatus, string> = {
-  green: "border-l-[#22C55E]",
-  yellow: "border-l-[#F59E0B]",
-  red: "border-l-[#EF4444]",
-}
-
 /* ── Status badge styles ─────────────────────────────────────────── */
 
 const badgeStyles: Record<RiskStatus, { bg: string; text: string; dot: string; label: string }> = {
@@ -140,8 +132,6 @@ export function KanbanPipeline() {
                         href={`/submissions/${sub.id}`}
                         className={cn(
                           "group relative flex h-[165px] flex-col overflow-hidden rounded-lg border border-[#E5E7EB] bg-white shadow-[0_1px_3px_rgba(0,0,0,0.05)] transition-shadow hover:shadow-md",
-                          "border-l-4",
-                          borderByRisk[sub.riskStatus],
                           `stagger-${cardIdx + 1} animate-fade-in-up`
                         )}
                       >
