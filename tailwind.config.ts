@@ -44,6 +44,22 @@ const config: Config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        sidebar: {
+          DEFAULT: "hsl(var(--sidebar))",
+          foreground: "hsl(var(--sidebar-foreground))",
+          border: "hsl(var(--sidebar-border))",
+          accent: "hsl(var(--sidebar-accent))",
+          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
+        },
+        ai: {
+          surface: "hsl(var(--ai-surface))",
+          "surface-foreground": "hsl(var(--ai-surface-foreground))",
+        },
+        status: {
+          green: "hsl(var(--status-green))",
+          yellow: "hsl(var(--status-yellow))",
+          red: "hsl(var(--status-red))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",

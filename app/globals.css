@@ -4,48 +4,41 @@
 
 @layer base {
   :root {
-    --background: 40 20% 96%;
-    --foreground: 220 20% 12%;
+    --background: 210 20% 98%;
+    --foreground: 220 25% 10%;
     --card: 0 0% 100%;
-    --card-foreground: 220 20% 12%;
+    --card-foreground: 220 25% 10%;
     --popover: 0 0% 100%;
-    --popover-foreground: 220 20% 12%;
-    --primary: 220 60% 30%;
+    --popover-foreground: 220 25% 10%;
+    --primary: 217 71% 45%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 40 15% 90%;
-    --secondary-foreground: 220 20% 12%;
-    --muted: 40 10% 92%;
-    --muted-foreground: 220 10% 45%;
-    --accent: 28 80% 52%;
+    --secondary: 210 16% 93%;
+    --secondary-foreground: 220 25% 10%;
+    --muted: 210 14% 95%;
+    --muted-foreground: 220 10% 46%;
+    --accent: 217 71% 45%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 100%;
-    --border: 220 10% 86%;
-    --input: 220 10% 86%;
-    --ring: 220 60% 30%;
+    --border: 214 16% 89%;
+    --input: 214 16% 89%;
+    --ring: 217 71% 45%;
     --radius: 0.5rem;
-  }
-
-  .dark {
-    --background: 220 20% 8%;
-    --foreground: 40 10% 94%;
-    --card: 220 18% 12%;
-    --card-foreground: 40 10% 94%;
-    --popover: 220 18% 12%;
-    --popover-foreground: 40 10% 94%;
-    --primary: 220 60% 55%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 220 15% 18%;
-    --secondary-foreground: 40 10% 94%;
-    --muted: 220 15% 16%;
-    --muted-foreground: 220 10% 55%;
-    --accent: 28 80% 52%;
-    --accent-foreground: 0 0% 100%;
-    --destructive: 0 72% 51%;
-    --destructive-foreground: 0 0% 100%;
-    --border: 220 15% 20%;
-    --input: 220 15% 20%;
-    --ring: 220 60% 55%;
+    --chart-1: 217 71% 45%;
+    --chart-2: 142 60% 40%;
+    --chart-3: 38 92% 50%;
+    --chart-4: 0 72% 51%;
+    --chart-5: 262 52% 47%;
+    --sidebar: 210 20% 98%;
+    --sidebar-foreground: 220 25% 10%;
+    --sidebar-border: 214 16% 89%;
+    --sidebar-accent: 217 71% 96%;
+    --sidebar-accent-foreground: 217 71% 45%;
+    --ai-surface: 217 60% 96%;
+    --ai-surface-foreground: 217 71% 35%;
+    --status-green: 142 60% 40%;
+    --status-yellow: 38 92% 50%;
+    --status-red: 0 72% 51%;
   }
 }
 

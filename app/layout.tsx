@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Underwriter's Assistant",
+  title: "UWA Agent - Underwriting Assistant",
   description:
-    "A professional tool for insurance underwriters to analyze risk, review applications, and make informed decisions.",
+    "AI-powered command center for commercial property insurance underwriting assistants.",
 }
 
 export default function RootLayout({
