@@ -79,29 +79,6 @@ function timeColor(days: number) {
   return "text-[#64748B]"
 }
 
-/* ── Tag classification ──────────────────────────────────────────── */
-
-function tagClasses(flag: string) {
-  const lower = flag.toLowerCase()
-  if (
-    lower.includes("missing") ||
-    lower.includes("expir") ||
-    lower.includes("delayed") ||
-    lower.includes("loss")
-  )
-    return "bg-[#FEE2E2] text-[#DC2626] border border-[#FECACA]"
-  if (lower.includes("binding") || lower.includes("authority"))
-    return "bg-[#FEF3C7] text-[#D97706] border border-[#FDE68A]"
-  return "bg-[#F1F5F9] text-[#475569] border border-[#E2E8F0]"
-}
-
-/** Shorten long tags so two fit on one row */
-function shortenTag(flag: string) {
-  if (flag.length > 20) {
-    return flag.replace("expiring", "exp").replace("Friday", "Fri")
-  }
-  return flag
-}
 
 const stages: SubmissionStage[] = ["intake", "uw-review", "quote", "bind"]
 
@@ -218,25 +195,8 @@ export function KanbanPipeline() {
                             {sub.nextAction}
                           </p>
 
-                          {/* Row 5 — Tags (36px reserved, pushed to bottom) */}
-                          <div className="flex h-9 shrink-0 flex-wrap items-center gap-1.5">
-                            {sub.riskFlags.slice(0, 2).map((flag) => (
-                              <span
-                                key={flag}
-                                className={cn(
-                                  "inline-flex max-w-[140px] items-center truncate rounded px-2 py-[2px] text-[11px] font-medium whitespace-nowrap",
-                                  tagClasses(flag)
-                                )}
-                              >
-                                {shortenTag(flag)}
-                              </span>
-                            ))}
-                            {sub.riskFlags.length > 2 && (
-                              <span className="text-[11px] font-medium text-muted-foreground">
-                                +{sub.riskFlags.length - 2} more
-                              </span>
-                            )}
-                          </div>
+                          {/* Spacer — keeps card structure uniform */}
+                          <div className="shrink-0" />
                         </div>
 
                         {/* Progress bar — 3px at very bottom */}

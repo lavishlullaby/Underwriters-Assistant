@@ -133,7 +133,7 @@ export const submissions: Submission[] = [
     daysInPipeline: 12,
     nextAction: "Follow up on missing loss runs",
     riskStatus: "red",
-    riskFlags: ["Missing loss runs", "Quote expiring Friday"],
+    riskFlags: [],
     premium: "$245,000",
     documents: [
       { name: "ACORD 125", status: "complete" },
@@ -200,9 +200,9 @@ export const submissions: Submission[] = [
     stage: "uw-review",
     daysInStage: 4,
     daysInPipeline: 8,
-    nextAction: "Awaiting Loss Control survey completion",
+    nextAction: "Awaiting Loss control survey",
     riskStatus: "yellow",
-    riskFlags: ["LC survey delayed"],
+    riskFlags: [],
     premium: "$520,000",
     documents: [
       { name: "ACORD 125", status: "complete" },
@@ -240,7 +240,7 @@ export const submissions: Submission[] = [
     daysInPipeline: 21,
     nextAction: "Obtain UW sign-off for binding",
     riskStatus: "yellow",
-    riskFlags: ["Binding authority expires Wed"],
+    riskFlags: [],
     premium: "$180,000",
     documents: [
       { name: "ACORD 125", status: "complete" },
