@@ -88,7 +88,6 @@ export default function AiInsightsPage() {
         </p>
       </div>
 
-      {/* Metrics Row */}
       <div className="mb-8 grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">
         {metrics.map((m) => (
           <div
@@ -118,7 +117,6 @@ export default function AiInsightsPage() {
         ))}
       </div>
 
-      {/* Insight Categories */}
       <div className="flex flex-col gap-6">
         {insights.map((group) => (
           <div key={group.id}>

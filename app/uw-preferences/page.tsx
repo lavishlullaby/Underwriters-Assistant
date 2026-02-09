@@ -1,5 +1,4 @@
 import {
-  User,
   Target,
   FileType,
   Presentation,
@@ -35,7 +34,6 @@ export default function UWPreferencesPage() {
             key={uw.id}
             className="rounded-lg border border-border bg-card"
           >
-            {/* Header */}
             <div className="flex items-center gap-4 border-b border-border px-5 py-4">
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-sm font-bold text-primary-foreground">
                 {uw.name
@@ -61,7 +59,6 @@ export default function UWPreferencesPage() {
               </div>
             </div>
 
-            {/* Workload Bar */}
             <div className="px-5 pt-4">
               <div className="mb-1 flex items-center justify-between">
                 <span className="flex items-center gap-1 text-xs text-muted-foreground">
@@ -85,7 +82,6 @@ export default function UWPreferencesPage() {
               </div>
             </div>
 
-            {/* Details */}
             <div className="flex flex-col gap-4 px-5 py-4">
               <div className="grid grid-cols-2 gap-4">
                 <div>

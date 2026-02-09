@@ -8,8 +8,6 @@ import {
   ChevronDown,
   ChevronUp,
   FileText,
-  Trophy,
-  Clock,
   Star,
 } from "lucide-react"
 import { brokers } from "@/lib/data"
@@ -42,7 +40,6 @@ export default function BrokerHubPage() {
               key={broker.id}
               className="overflow-hidden rounded-lg border border-border bg-card"
             >
-              {/* Collapsed Row */}
               <button
                 type="button"
                 onClick={() =>
@@ -109,11 +106,9 @@ export default function BrokerHubPage() {
                 </div>
               </button>
 
-              {/* Expanded Detail */}
               {isExpanded && (
                 <div className="border-t border-border px-5 py-4">
                   <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
-                    {/* Preferences */}
                     <div>
                       <h4 className="mb-2 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
                         Preferences
@@ -146,7 +141,6 @@ export default function BrokerHubPage() {
                       </div>
                     </div>
 
-                    {/* History Stats */}
                     <div>
                       <h4 className="mb-2 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
                         Submission History
@@ -179,7 +173,6 @@ export default function BrokerHubPage() {
                       </div>
                     </div>
 
-                    {/* AI Note */}
                     <div>
                       <AiInsightCard>{broker.aiNote}</AiInsightCard>
                     </div>
