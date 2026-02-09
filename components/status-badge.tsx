@@ -6,21 +6,21 @@ const statusConfig: Record<
   { bg: string; text: string; dot: string; label: string }
 > = {
   green: {
-    bg: "bg-emerald-50",
-    text: "text-emerald-700",
-    dot: "bg-emerald-500",
+    bg: "bg-[#DCFCE7]",
+    text: "text-[#166534]",
+    dot: "bg-[#22C55E]",
     label: "On Track",
   },
   yellow: {
-    bg: "bg-amber-50",
-    text: "text-amber-700",
-    dot: "bg-amber-500",
+    bg: "bg-[#FEF3C7]",
+    text: "text-[#92400E]",
+    dot: "bg-[#F59E0B]",
     label: "Attention",
   },
   red: {
-    bg: "bg-red-50",
-    text: "text-red-700",
-    dot: "bg-red-500",
+    bg: "bg-[#FEE2E2]",
+    text: "text-[#991B1B]",
+    dot: "bg-[#EF4444]",
     label: "At Risk",
   },
 }
@@ -36,7 +36,7 @@ export function StatusBadge({
   return (
     <span
       className={cn(
-        "inline-flex items-center gap-1.5 rounded-full px-2.5 py-0.5 text-xs font-medium",
+        "inline-flex shrink-0 items-center gap-1 rounded-full px-2.5 py-[3px] text-[11px] font-semibold uppercase leading-none whitespace-nowrap",
         config.bg,
         config.text,
         className

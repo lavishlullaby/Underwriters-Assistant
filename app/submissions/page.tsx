@@ -17,6 +17,16 @@ const stageColor: Record<string, string> = {
   bind: "bg-emerald-100 text-emerald-700",
 }
 
+const statusOrder: Record<string, number> = {
+  red: 0,     // At Risk first
+  yellow: 1,  // Attention second
+  green: 2,   // On Track last
+}
+
+const sortedSubmissions = [...submissions].sort(
+  (a, b) => (statusOrder[a.riskStatus] ?? 3) - (statusOrder[b.riskStatus] ?? 3)
+)
+
 export default function SubmissionsPage() {
   return (
     <div className="px-6 py-6">
@@ -56,7 +66,7 @@ export default function SubmissionsPage() {
             </tr>
           </thead>
           <tbody>
-            {submissions.map((sub) => (
+            {sortedSubmissions.map((sub) => (
               <tr
                 key={sub.id}
                 className="border-b border-border last:border-b-0 hover:bg-muted/30"

@@ -5,21 +5,27 @@ import { AiChatPanel } from "@/components/dashboard/ai-chat-panel"
 export default function DashboardPage() {
   return (
     <div className="flex h-full flex-col xl:flex-row">
-      <div className="flex-1 overflow-y-auto px-6 py-6">
-        <div className="mb-6">
-          <h1 className="text-xl font-bold text-foreground">
+      {/* Main content */}
+      <div className="flex-1 overflow-y-auto px-8 py-8">
+        {/* Header */}
+        <div className="mb-8 animate-fade-in-up">
+          <h1 className="text-[28px] font-semibold tracking-tight text-foreground">
             Good morning, Emily
           </h1>
-          <p className="text-sm text-muted-foreground">
+          <p className="mt-1 text-sm text-muted-foreground">
             {"Here's your command center for today. February 8, 2026."}
           </p>
         </div>
-        <div className="flex flex-col gap-8">
+
+        {/* Sections */}
+        <div className="flex flex-col gap-10">
           <PriorityCards />
           <KanbanPipeline />
         </div>
       </div>
-      <div className="w-full border-t border-border xl:w-96 xl:border-l xl:border-t-0">
+
+      {/* AI panel */}
+      <div className="w-full border-t border-border xl:w-[380px] xl:border-l xl:border-t-0">
         <AiChatPanel />
       </div>
     </div>

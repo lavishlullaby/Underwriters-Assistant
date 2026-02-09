@@ -24,6 +24,16 @@ import type { Submission } from "@/lib/data"
 import { StatusBadge } from "@/components/status-badge"
 import { AiInsightCard } from "@/components/ai-insight-card"
 import { cn } from "@/lib/utils"
+import { GenerateQuoteModal } from "@/components/modals/generate-quote-modal"
+import { DraftEmailModal } from "@/components/modals/draft-email-modal"
+import { EscalateModal } from "@/components/modals/escalate-modal"
+import { MarkCompleteModal } from "@/components/modals/mark-complete-modal"
+import {
+  quotePackageDataMap,
+  brokerEmailDataMap,
+  escalateDataMap,
+  markCompleteDataMap,
+} from "@/lib/submission-actions-data"
 
 const tabs = [
   { id: "overview", label: "Overview", icon: FileText },
@@ -54,8 +64,11 @@ const dataOrderStatusConfig = {
   error: { icon: XCircle, color: "text-red-500", label: "Error" },
 }
 
+type ModalType = "quote" | "email" | "escalate" | "complete" | null
+
 export function SubmissionDetail({ submission }: { submission: Submission }) {
   const [activeTab, setActiveTab] = useState<TabId>("overview")
+  const [openModal, setOpenModal] = useState<ModalType>(null)
 
   const stageLabels: Record<string, string> = {
     intake: "Intake",
@@ -354,6 +367,7 @@ export function SubmissionDetail({ submission }: { submission: Submission }) {
       <div className="mt-8 flex flex-wrap items-center gap-3 border-t border-border pt-4">
         <button
           type="button"
+          onClick={() => setOpenModal("quote")}
           className="inline-flex items-center gap-1.5 rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
         >
           <FileText className="h-4 w-4" />
@@ -361,6 +375,7 @@ export function SubmissionDetail({ submission }: { submission: Submission }) {
         </button>
         <button
           type="button"
+          onClick={() => setOpenModal("email")}
           className="inline-flex items-center gap-1.5 rounded-md border border-border bg-card px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-muted"
         >
           <Mail className="h-4 w-4" />
@@ -368,6 +383,7 @@ export function SubmissionDetail({ submission }: { submission: Submission }) {
         </button>
         <button
           type="button"
+          onClick={() => setOpenModal("escalate")}
           className="inline-flex items-center gap-1.5 rounded-md border border-border bg-card px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-muted"
         >
           <ArrowUpRight className="h-4 w-4" />
@@ -375,12 +391,47 @@ export function SubmissionDetail({ submission }: { submission: Submission }) {
         </button>
         <button
           type="button"
+          onClick={() => setOpenModal("complete")}
           className="inline-flex items-center gap-1.5 rounded-md border border-border bg-card px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-muted"
         >
           <CheckCheck className="h-4 w-4" />
           Mark Complete
         </button>
       </div>
+
+      {/* Action Modals */}
+      {quotePackageDataMap[submission.id] && (
+        <GenerateQuoteModal
+          open={openModal === "quote"}
+          onClose={() => setOpenModal(null)}
+          accountName={submission.account}
+          data={quotePackageDataMap[submission.id]}
+        />
+      )}
+      {brokerEmailDataMap[submission.id] && (
+        <DraftEmailModal
+          open={openModal === "email"}
+          onClose={() => setOpenModal(null)}
+          accountName={submission.account}
+          data={brokerEmailDataMap[submission.id]}
+        />
+      )}
+      {escalateDataMap[submission.id] && (
+        <EscalateModal
+          open={openModal === "escalate"}
+          onClose={() => setOpenModal(null)}
+          accountName={submission.account}
+          data={escalateDataMap[submission.id]}
+        />
+      )}
+      {markCompleteDataMap[submission.id] && (
+        <MarkCompleteModal
+          open={openModal === "complete"}
+          onClose={() => setOpenModal(null)}
+          accountName={submission.account}
+          data={markCompleteDataMap[submission.id]}
+        />
+      )}
     </div>
   )
 }

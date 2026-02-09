@@ -9,7 +9,9 @@ import {
   Users,
   UserCog,
   Sparkles,
-  Shield,
+  Zap,
+  LogOut,
+  Settings,
 } from "lucide-react"
 import { cn } from "@/lib/utils"
 
@@ -26,22 +28,29 @@ export function AppSidebar() {
   const pathname = usePathname()
 
   return (
-    <aside className="flex h-screen w-60 shrink-0 flex-col border-r border-sidebar-border bg-card">
-      <div className="flex items-center gap-2 border-b border-sidebar-border px-5 py-4">
-        <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
-          <Shield className="h-4 w-4 text-primary-foreground" />
+    <aside
+      className="flex h-screen w-60 shrink-0 flex-col"
+      style={{
+        background: "linear-gradient(180deg, #1e3a5f 0%, #0f172a 100%)",
+      }}
+    >
+      {/* Logo */}
+      <div className="flex items-center gap-2.5 border-b border-white/10 px-5 py-4">
+        <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-indigo-500 to-cyan-400 shadow-md shadow-indigo-500/30">
+          <Zap className="h-4 w-4 text-white" />
         </div>
         <div className="flex flex-col">
-          <span className="text-sm font-semibold text-foreground leading-tight">
+          <span className="text-sm font-semibold text-white leading-tight">
             UWA Agent
           </span>
-          <span className="text-xs text-muted-foreground leading-tight">
+          <span className="text-[11px] text-slate-400 leading-tight">
             Underwriting Assistant
           </span>
         </div>
       </div>
 
-      <nav className="flex flex-1 flex-col gap-1 px-3 py-3">
+      {/* Navigation */}
+      <nav className="flex flex-1 flex-col gap-0.5 px-3 py-3">
         {navItems.map((item) => {
           const isActive =
             item.href === "/"
@@ -52,29 +61,38 @@ export function AppSidebar() {
               key={item.href}
               href={item.href}
               className={cn(
-                "flex items-center gap-3 rounded-md px-3 py-2 text-sm font-medium transition-colors",
+                "group flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-all duration-200",
                 isActive
-                  ? "bg-sidebar-accent text-sidebar-accent-foreground"
-                  : "text-muted-foreground hover:bg-muted hover:text-foreground"
+                  ? "border-l-[3px] border-indigo-400 bg-white/10 text-white"
+                  : "border-l-[3px] border-transparent text-slate-400 hover:bg-white/[0.06] hover:text-slate-200"
               )}
             >
-              <item.icon className="h-4 w-4 shrink-0" />
+              <item.icon
+                className={cn(
+                  "h-[18px] w-[18px] shrink-0 transition-transform duration-200 group-hover:translate-x-0.5",
+                  isActive ? "text-indigo-300" : "text-slate-500 group-hover:text-slate-300"
+                )}
+              />
               {item.label}
             </Link>
           )
         })}
       </nav>
 
-      <div className="border-t border-sidebar-border px-4 py-3">
-        <div className="flex items-center gap-3">
-          <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary text-xs font-semibold text-primary-foreground">
-            ER
+      {/* User profile */}
+      <div className="border-t border-white/10 px-4 py-3">
+        <div className="group flex items-center gap-3 rounded-lg px-1 py-1 transition-colors hover:bg-white/[0.06]">
+          <div className="relative">
+            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-indigo-500 text-xs font-semibold text-white">
+              ER
+            </div>
+            <span className="absolute -bottom-0.5 -right-0.5 h-2.5 w-2.5 rounded-full border-2 border-[#0f172a] bg-emerald-400" />
           </div>
-          <div className="flex flex-col">
-            <span className="text-sm font-medium text-foreground leading-tight">
+          <div className="flex flex-1 flex-col">
+            <span className="text-sm font-medium text-slate-200 leading-tight">
               Emily Rodriguez
             </span>
-            <span className="text-xs text-muted-foreground leading-tight">
+            <span className="text-[11px] text-slate-500 leading-tight">
               Underwriting Assistant
             </span>
           </div>
