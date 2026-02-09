@@ -58,7 +58,7 @@ const briefingItems: BriefingItem[] = [
     id: "b5",
     icon: User,
     iconColor: "text-blue-500",
-    text: "It\u2019s been a couple weeks since you caught up with Rachel Kim \u2014 she always brings good accounts. Might be nice to check in and see how things are going.",
+    text: "It\u2019s been a couple weeks since you caught up with Rachel Kim \u2014 she always brings good intel. Worth checking in?",
     actionLabel: "Say hello",
     actionHref: "/brokers",
   },
