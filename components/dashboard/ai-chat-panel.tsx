@@ -33,7 +33,7 @@ const initialMessages: Message[] = [
     id: "1",
     role: "assistant",
     content:
-      "Good morning, Emily! You have 4 priority items today. The ABC Corp quote is the most urgent -- loss runs are still missing and the quote expires Friday. Would you like me to draft a follow-up email to broker Jane Mitchell?",
+      "Good morning, Emily! You have 4 priority items today. The ABC Corporation quote is the most urgent -- loss runs are still missing and the quote expires Friday. Would you like me to draft a follow-up email to broker Jane Mitchell?",
   },
 ]
 

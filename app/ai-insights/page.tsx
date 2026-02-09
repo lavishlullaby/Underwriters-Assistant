@@ -28,7 +28,7 @@ const insights = [
     icon: AlertTriangle,
     color: "text-red-600",
     items: [
-      "ABC Corp quote expires Friday -- loss runs still missing. This is the highest-risk item in the pipeline.",
+      "ABC Corporation quote expires Friday -- loss runs still missing. This is the highest-risk item in the pipeline.",
       "Johnson Mfg LC survey is stuck at 4 days. Historical data shows surveys stalling beyond 5 days have a 40% chance of requiring reassignment.",
       "Compliance backlog is averaging 3-day delays this week -- 50% above normal.",
     ],

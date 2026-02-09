@@ -87,7 +87,7 @@ const janeMitchell: BrokerDetail = {
       label: "Phone Call",
       duration: "12 min",
       summary:
-        "Discussed ABC Corp quote status. Jane mentioned client is comparing with Travelers. She expects decision by Friday. Asked us to expedite LC survey if possible.",
+        "Discussed ABC Corporation quote status. Jane mentioned client is comparing with Travelers. She expects decision by Friday. Asked us to expedite LC survey if possible.",
       intelCaptured: "Travelers quoted $230K, we're at $245K",
       actionTaken: "Escalated LC survey priority",
     },
@@ -97,7 +97,7 @@ const janeMitchell: BrokerDetail = {
       date: "Feb 5, 2026",
       label: "Email Thread",
       messageCount: 3,
-      subject: "RE: ABC Corp - Loss runs request",
+      subject: "RE: ABC Corporation - Loss runs request",
       summary:
         "Jane confirmed she's chasing client for 5-year loss runs. Hartford (prior carrier) is slow to respond.",
     },
@@ -108,7 +108,7 @@ const janeMitchell: BrokerDetail = {
       label: "Phone Call",
       duration: "8 min",
       summary:
-        'Initial submission discussion for ABC Corp. Jane described client as "long-term relationship, very price sensitive." Mentioned they\'ve been with Hartford for 10 years.',
+        'Initial submission discussion for ABC Corporation. Jane described client as "long-term relationship, very price sensitive." Mentioned they\'ve been with Hartford for 10 years.',
       intelCaptured: "Client is price sensitive, Hartford incumbent",
     },
     {
@@ -117,7 +117,7 @@ const janeMitchell: BrokerDetail = {
       date: "Jan 28, 2026",
       label: "Email Thread",
       messageCount: 5,
-      subject: "New submission - ABC Corp",
+      subject: "New submission - ABC Corporation",
       summary:
         "Initial submission received. Jane asked for quick turnaround as client is actively shopping.",
     },
@@ -159,7 +159,7 @@ const janeMitchell: BrokerDetail = {
   activeSubmissions: [
     {
       id: "s1",
-      account: "ABC Corp",
+      account: "ABC Corporation",
       stage: "Quote",
       riskStatus: "red",
       premium: "$245K",
@@ -217,9 +217,9 @@ const tomBradley: BrokerDetail = {
       date: "Feb 7, 2026",
       label: "Email Thread",
       messageCount: 2,
-      subject: "Pacific Retail - New Submission",
+      subject: "Pacific Retail Group - New Submission",
       summary:
-        "Tom submitted Pacific Retail with ACORD and SOV attached. Requested expedited intake given renewal deadline.",
+        "Tom submitted Pacific Retail Group with ACORD and SOV attached. Requested expedited intake given renewal deadline.",
     },
     {
       id: "t6",
@@ -279,7 +279,7 @@ const tomBradley: BrokerDetail = {
   activeSubmissions: [
     {
       id: "s2",
-      account: "Pacific Retail",
+      account: "Pacific Retail Group",
       stage: "Intake",
       riskStatus: "green",
       premium: "TBD",
@@ -409,7 +409,7 @@ const sarahKim: BrokerDetail = {
     },
     {
       id: "s11",
-      account: "Heritage Mfg",
+      account: "Heritage Manufacturing",
       stage: "Intake",
       riskStatus: "green",
       premium: "TBD",

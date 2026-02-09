@@ -92,7 +92,7 @@ export const priorities: PriorityItem[] = [
   {
     id: "p1",
     type: "urgent",
-    title: "Quote for ABC Corp expires Friday",
+    title: "Quote for ABC Corporation expires Friday",
     description: "Subjectivity still open -- awaiting updated loss runs from broker.",
     action: "/submissions/s1",
     actionLabel: "Call Broker",
@@ -147,10 +147,10 @@ export const priorities: PriorityItem[] = [
 /* ── Submissions (16 total) ──────────────────────────────────────── */
 
 export const submissions: Submission[] = [
-  /* ── s1: ABC Corp ── */
+  /* ── s1: ABC Corporation ── */
   {
     id: "s1",
-    account: "ABC Corp",
+    account: "ABC Corporation",
     broker: "Jane Mitchell",
     brokerFirm: "Marsh & McLennan",
     uwAssigned: "Robert Chen",
@@ -184,17 +184,17 @@ export const submissions: Submission[] = [
       { date: "2026-02-01", action: "Submission received and intake completed", by: "Emily R." },
     ],
     aiSummary:
-      "ABC Corp is a mid-size manufacturing company with 3 locations in the Midwest. Total insured value is $18.2M. The account has been with the carrier for 2 years with clean loss history. Current quote is competitive at $245K but cannot be finalized without 5-year loss runs from the broker.",
+      "ABC Corporation is a mid-size manufacturing company with 3 locations in the Midwest. Total insured value is $18.2M. The account has been with the carrier for 2 years with clean loss history. Current quote is competitive at $245K but cannot be finalized without 5-year loss runs from the broker.",
     aiAnomalies: [
       "Year built 1965 for main facility but ProMetrix shows 2019 renovation -- confirmed gut rehab with broker.",
       "SOV lists sprinkler protection but COPE data shows partial coverage only at Location 2.",
       "D&B score trending down 12 points over last quarter -- monitor financial stability.",
     ],
   },
-  /* ── s2: Pacific Retail ── */
+  /* ── s2: Pacific Retail Group ── */
   {
     id: "s2",
-    account: "Pacific Retail",
+    account: "Pacific Retail Group",
     broker: "Tom Bradley",
     brokerFirm: "Aon Risk Solutions",
     uwAssigned: "Robert Chen",
@@ -533,10 +533,10 @@ export const submissions: Submission[] = [
       "48-unit oceanfront condo association. All subjectivities cleared. Premium payment received this morning. Policy issuance in progress.",
     aiAnomalies: [],
   },
-  /* ── s11: Heritage Mfg ── */
+  /* ── s11: Heritage Manufacturing ── */
   {
     id: "s11",
-    account: "Heritage Mfg",
+    account: "Heritage Manufacturing",
     broker: "Sarah Kim",
     brokerFirm: "Willis Towers Watson",
     uwAssigned: "Maria Lopez",
@@ -783,7 +783,7 @@ export const queueItems: {
     },
     {
       id: "q2",
-      fileName: "ABC Corp",
+      fileName: "ABC Corporation",
       owner: "Mike Reynolds",
       status: "Blocked",
       daysInQueue: 6,

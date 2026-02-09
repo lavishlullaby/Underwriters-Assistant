@@ -73,7 +73,7 @@ export const quotePackageDataMap: Record<string, QuotePackageData> = {
     ],
     coverLetter: `Dear Jane,
 
-Thank you for the opportunity to quote ABC Corp. Please find attached our indication for this 3-location manufacturing portfolio.
+Thank you for the opportunity to quote ABC Corporation. Please find attached our indication for this 3-location manufacturing portfolio.
 
 QUOTE SUMMARY:
 - Premium: $245,000
@@ -98,7 +98,7 @@ Sarah Chen`,
       to: "jane.mitchell@marshmclennan.com",
       cc: "lisa.park@marshmclennan.com",
       ccNote: "Jane's assistant, per her preferences",
-      subject: "ABC Corp -- Quote Indication -- $245,000",
+      subject: "ABC Corporation -- Quote Indication -- $245,000",
     },
   },
   s2: {
@@ -210,10 +210,10 @@ export const brokerEmailDataMap: Record<string, BrokerEmailData> = {
     emailTypes: ["Chase Missing Docs", "Status Update", "Urgent Deadline", "Custom"],
     selectedType: "Chase Missing Docs",
     generatedEmail: {
-      subject: "ABC Corp -- Need 5-year loss runs by Wednesday",
+      subject: "ABC Corporation -- Need 5-year loss runs by Wednesday",
       body: `Hi Jane,
 
-Quick follow-up on ABC Corp. We're in great shape to finalize the quote at $245,000, but I still need the 5-year loss runs from the prior carrier to complete the file.
+Quick follow-up on ABC Corporation. We're in great shape to finalize the quote at $245,000, but I still need the 5-year loss runs from the prior carrier to complete the file.
 
 Could you check with your client on the status? If we can get these by Wednesday, I can have the final quote package to you Thursday, well ahead of Friday's expiration.
 
@@ -244,10 +244,10 @@ Sarah`,
     emailTypes: ["Acknowledgment", "Request Missing Docs", "Status Update", "Custom"],
     selectedType: "Acknowledgment",
     generatedEmail: {
-      subject: "Pacific Retail -- Submission Received",
+      subject: "Pacific Retail Group -- Submission Received",
       body: `Hi Tom,
 
-Thanks for sending over Pacific Retail. I've received the submission and will have it to underwriting shortly.
+Thanks for sending over Pacific Retail Group. I've received the submission and will have it to underwriting shortly.
 
 Quick confirmation of what's on file:
 [check] ACORD 125/140
