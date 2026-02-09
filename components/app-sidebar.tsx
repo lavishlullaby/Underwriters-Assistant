@@ -31,7 +31,7 @@ export function AppSidebar() {
     <aside
       className="flex h-screen w-60 shrink-0 flex-col"
       style={{
-        background: "linear-gradient(180deg, #1e3a5f 0%, #0f172a 100%)",
+        background: "linear-gradient(180deg, #292524 0%, #1c1917 100%)",
       }}
     >
       {/* Logo */}
@@ -86,7 +86,7 @@ export function AppSidebar() {
             <div className="flex h-8 w-8 items-center justify-center rounded-full bg-indigo-500 text-xs font-semibold text-white">
               ER
             </div>
-            <span className="absolute -bottom-0.5 -right-0.5 h-2.5 w-2.5 rounded-full border-2 border-[#0f172a] bg-emerald-400" />
+            <span className="absolute -bottom-0.5 -right-0.5 h-2.5 w-2.5 rounded-full border-2 border-[#1c1917] bg-emerald-400" />
           </div>
           <div className="flex flex-1 flex-col">
             <span className="text-sm font-medium text-slate-200 leading-tight">
