@@ -8,34 +8,25 @@ import { cn } from "@/lib/utils"
 const typeConfig = {
   urgent: {
     icon: AlertTriangle,
-    gradient: "from-red-50 to-red-100",
-    border: "border-red-200",
-    shadow: "shadow-urgent",
     iconColor: "text-red-500",
     label: "Urgent",
-    labelBg: "bg-red-100 text-red-700",
+    labelBg: "bg-[#FEE2E2] text-[#DC2626]",
     pulse: true,
     confidence: "High confidence",
   },
   warning: {
     icon: AlertCircle,
-    gradient: "from-amber-50 to-amber-100",
-    border: "border-amber-200",
-    shadow: "shadow-warning",
     iconColor: "text-amber-500",
     label: "Warning",
-    labelBg: "bg-amber-100 text-amber-700",
+    labelBg: "bg-[#FEF3C7] text-[#D97706]",
     pulse: false,
     confidence: "Review recommended",
   },
   info: {
     icon: BarChart3,
-    gradient: "from-blue-50 to-blue-100",
-    border: "border-blue-200",
-    shadow: "shadow-info",
     iconColor: "text-blue-500",
     label: "Info",
-    labelBg: "bg-blue-100 text-blue-700",
+    labelBg: "bg-[#DBEAFE] text-[#2563EB]",
     pulse: false,
     confidence: "AI detected",
   },
@@ -66,10 +57,7 @@ export function PriorityCards() {
             <div
               key={item.id}
               className={cn(
-                "card-hover group flex flex-col rounded-xl border bg-gradient-to-br p-4",
-                config.gradient,
-                config.border,
-                config.shadow,
+                "card-hover group flex flex-col rounded-xl border border-[#E5E7EB] bg-white p-4 shadow-sm",
                 `stagger-${idx + 1} animate-fade-in-up`
               )}
             >
