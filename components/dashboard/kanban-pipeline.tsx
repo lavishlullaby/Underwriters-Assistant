@@ -9,31 +9,27 @@ import { cn } from "@/lib/utils"
 
 const stageConfig: Record<
   SubmissionStage,
-  { label: string; dotColor: string; headerBar: string; progressFill: string }
+  { label: string; dotColor: string; headerBar: string }
 > = {
   intake: {
     label: "Intake",
     dotColor: "bg-[#6B7280]",
     headerBar: "bg-[#6B7280]",
-    progressFill: "bg-[#6B7280]",
   },
   "uw-review": {
     label: "UW Review",
     dotColor: "bg-[#3B82F6]",
     headerBar: "bg-[#3B82F6]",
-    progressFill: "bg-[#3B82F6]",
   },
   quote: {
     label: "Quote",
     dotColor: "bg-[#F59E0B]",
     headerBar: "bg-[#F59E0B]",
-    progressFill: "bg-[#F59E0B]",
   },
   bind: {
     label: "Bind",
     dotColor: "bg-[#22C55E]",
     headerBar: "bg-[#22C55E]",
-    progressFill: "bg-[#22C55E]",
   },
 }
 
@@ -131,7 +127,7 @@ export function KanbanPipeline() {
               {/* Cards — 12px gap between cards */}
               <div className="flex flex-col gap-3">
                 {items.length === 0 ? (
-                  <div className="flex h-[220px] items-center justify-center rounded-xl border border-dashed border-border bg-white">
+                  <div className="flex h-[165px] items-center justify-center rounded-xl border border-dashed border-border bg-white">
                     <p className="text-xs text-muted-foreground">No submissions</p>
                   </div>
                 ) : (
@@ -142,16 +138,16 @@ export function KanbanPipeline() {
                         key={sub.id}
                         href={`/submissions/${sub.id}`}
                         className={cn(
-                          "group relative flex h-[220px] flex-col overflow-hidden rounded-xl border border-border bg-white shadow-sm transition-shadow hover:shadow-md",
+                          "group relative flex h-[165px] flex-col overflow-hidden rounded-lg border border-[#E5E7EB] bg-white shadow-[0_1px_3px_rgba(0,0,0,0.05)] transition-shadow hover:shadow-md",
                           "border-l-4",
                           borderByRisk[sub.riskStatus],
                           `stagger-${cardIdx + 1} animate-fade-in-up`
                         )}
                       >
                         {/* Card body */}
-                        <div className="flex flex-1 flex-col gap-2 p-4">
-                          {/* Row 1 — Title + Badge (52px) */}
-                          <div className="flex h-[52px] shrink-0 items-start justify-between gap-2">
+                        <div className="flex flex-1 flex-col gap-1.5 p-4 pb-3">
+                          {/* Row 1 — Title + Badge */}
+                          <div className="flex shrink-0 items-start justify-between gap-2 mb-1">
                             <h4 className="max-w-[60%] text-[15px] font-semibold leading-[1.3] text-foreground transition-colors group-hover:text-primary">
                               {sub.account}
                             </h4>
@@ -167,8 +163,8 @@ export function KanbanPipeline() {
                             </span>
                           </div>
 
-                          {/* Row 2 — Broker (32px) */}
-                          <div className="flex h-8 shrink-0 items-center gap-2">
+                          {/* Row 2 — Broker */}
+                          <div className="flex h-7 shrink-0 items-center gap-2 mb-0.5">
                             <div
                               className={cn(
                                 "flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-[10px] font-semibold text-white",
@@ -182,8 +178,8 @@ export function KanbanPipeline() {
                             </span>
                           </div>
 
-                          {/* Row 3 — Time (28px) */}
-                          <div className="flex h-7 shrink-0 items-center gap-1.5">
+                          {/* Row 3 — Time */}
+                          <div className="flex h-6 shrink-0 items-center gap-1.5 mb-1">
                             <Clock className="h-3.5 w-3.5 shrink-0 text-[#9CA3AF]" />
                             <span className={cn("text-[13px]", timeColor(sub.daysInStage))}>
                               {sub.daysInStage}d in stage
@@ -195,18 +191,6 @@ export function KanbanPipeline() {
                             {sub.nextAction}
                           </p>
 
-                          {/* Spacer — keeps card structure uniform */}
-                          <div className="shrink-0" />
-                        </div>
-
-                        {/* Progress bar — 3px at very bottom */}
-                        <div className="h-[3px] w-full shrink-0 bg-[#E2E8F0]">
-                          <div
-                            className={cn("h-full rounded-bl-xl", cfg.progressFill)}
-                            style={{
-                              width: `${Math.min(100, (sub.daysInStage / 7) * 100)}%`,
-                            }}
-                          />
                         </div>
                       </Link>
                     )
