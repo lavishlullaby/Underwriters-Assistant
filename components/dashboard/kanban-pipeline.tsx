@@ -127,13 +127,13 @@ export function KanbanPipeline() {
                       key={sub.id}
                       href={`/submissions/${sub.id}`}
                       className={cn(
-                        "card-hover group rounded-xl border border-border bg-card shadow-card-sm",
+                        "card-hover group flex min-h-[220px] flex-col rounded-xl border border-border bg-card shadow-card-sm",
                         "border-l-4",
                         config.borderColor,
                         `stagger-${cardIdx + 1} animate-fade-in-up`
                       )}
                     >
-                      <div className="p-3.5">
+                      <div className="flex flex-1 flex-col p-3.5">
                         <div className="mb-2 flex items-start justify-between gap-2">
                           <h4 className="text-[15px] font-semibold text-foreground leading-snug group-hover:text-primary transition-colors duration-200">
                             {sub.account}
@@ -165,9 +165,10 @@ export function KanbanPipeline() {
                           {sub.nextAction}
                         </p>
 
-                        {/* Risk flags */}
+                        {/* Risk flags — pushed to bottom */}
+                        <div className="mt-auto pt-2.5">
                         {sub.riskFlags.length > 0 && (
-                          <div className="mt-2.5 flex flex-wrap gap-1">
+                          <div className="flex flex-wrap gap-1">
                             {sub.riskFlags.map((flag) => {
                               const isRed =
                                 flag.toLowerCase().includes("missing") ||
@@ -188,6 +189,7 @@ export function KanbanPipeline() {
                             })}
                           </div>
                         )}
+                        </div>
                       </div>
 
                       {/* Progress bar at bottom */}

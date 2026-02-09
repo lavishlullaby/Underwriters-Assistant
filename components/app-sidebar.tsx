@@ -9,7 +9,7 @@ import {
   Users,
   UserCog,
   Sparkles,
-  Shield,
+  Zap,
   LogOut,
   Settings,
 } from "lucide-react"
@@ -36,8 +36,8 @@ export function AppSidebar() {
     >
       {/* Logo */}
       <div className="flex items-center gap-2.5 border-b border-white/10 px-5 py-4">
-        <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-indigo-500">
-          <Shield className="h-4 w-4 text-white" />
+        <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-indigo-500 to-cyan-400 shadow-md shadow-indigo-500/30">
+          <Zap className="h-4 w-4 text-white" />
         </div>
         <div className="flex flex-col">
           <span className="text-sm font-semibold text-white leading-tight">
