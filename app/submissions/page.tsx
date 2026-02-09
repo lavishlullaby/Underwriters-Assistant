@@ -41,7 +41,7 @@ export default function SubmissionsPage() {
         <table className="w-full text-left text-sm">
           <thead>
             <tr className="border-b border-border bg-muted/50">
-              <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+              <th className="whitespace-nowrap px-4 py-3 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
                 Account
               </th>
               <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
@@ -71,8 +71,8 @@ export default function SubmissionsPage() {
                 key={sub.id}
                 className="border-b border-border last:border-b-0 hover:bg-muted/30"
               >
-                <td className="px-4 py-3 font-medium text-foreground">
-                  {sub.account}
+<td className="whitespace-nowrap px-4 py-3 font-medium text-foreground">
+                    {sub.account}
                 </td>
                 <td className="px-4 py-3 text-muted-foreground">
                   {sub.broker}
@@ -96,7 +96,7 @@ export default function SubmissionsPage() {
                 <td className="px-4 py-3">
                   <StatusBadge status={sub.riskStatus} />
                 </td>
-                <td className="max-w-[200px] px-4 py-3 text-xs text-muted-foreground">
+                <td className="px-4 py-3 text-sm text-muted-foreground">
                   {sub.nextAction}
                 </td>
                 <td className="px-4 py-3">

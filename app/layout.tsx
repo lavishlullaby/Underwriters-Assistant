@@ -1,16 +1,17 @@
 import type { Metadata } from "next"
-import { Geist, Geist_Mono } from "next/font/google"
+import { DM_Sans, DM_Mono } from "next/font/google"
 import "./globals.css"
 import { AppSidebar } from "@/components/app-sidebar"
 
-const geistSans = Geist({
+const dmSans = DM_Sans({
   subsets: ["latin"],
-  variable: "--font-geist-sans",
+  variable: "--font-dm-sans",
 })
 
-const geistMono = Geist_Mono({
+const dmMono = DM_Mono({
   subsets: ["latin"],
-  variable: "--font-geist-mono",
+  weight: ["400", "500"],
+  variable: "--font-dm-mono",
 })
 
 export const metadata: Metadata = {
@@ -27,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}
+        className={`${dmSans.variable} ${dmMono.variable} font-sans antialiased`}
       >
         <div className="flex h-screen overflow-hidden">
           <AppSidebar />

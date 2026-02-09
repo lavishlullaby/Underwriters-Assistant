@@ -4,38 +4,38 @@
 
 @layer base {
   :root {
-    --background: 210 20% 98%;
-    --foreground: 220 20% 14%;
-    --card: 0 0% 100%;
-    --card-foreground: 220 20% 14%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 20% 14%;
+    --background: 40 20% 98%;
+    --foreground: 24 10% 15%;
+    --card: 40 33% 99%;
+    --card-foreground: 24 10% 15%;
+    --popover: 40 33% 99%;
+    --popover-foreground: 24 10% 15%;
     --primary: 239 84% 67%;
     --primary-foreground: 0 0% 100%;
     --secondary: 263 70% 50%;
     --secondary-foreground: 0 0% 100%;
-    --muted: 210 14% 95%;
-    --muted-foreground: 215 16% 47%;
-    --accent: 199 89% 48%;
+    --muted: 30 10% 94%;
+    --muted-foreground: 25 10% 44%;
+    --accent: 168 76% 36%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 100%;
-    --border: 214 20% 90%;
-    --input: 214 20% 90%;
+    --border: 30 12% 90%;
+    --input: 30 12% 90%;
     --ring: 239 84% 67%;
-    --radius: 0.5rem;
+    --radius: 1rem;
 
     --chart-1: 239 84% 67%;
-    --chart-2: 142 60% 40%;
+    --chart-2: 160 60% 40%;
     --chart-3: 38 92% 50%;
     --chart-4: 0 72% 51%;
     --chart-5: 263 70% 50%;
 
-    --sidebar-bg-from: 213 44% 24%;
-    --sidebar-bg-to: 222 47% 11%;
-    --sidebar-foreground: 210 40% 96%;
-    --sidebar-muted: 215 20% 65%;
-    --sidebar-border: 215 25% 27%;
+    --sidebar-bg-from: 20 14% 20%;
+    --sidebar-bg-to: 20 14% 10%;
+    --sidebar-foreground: 30 20% 96%;
+    --sidebar-muted: 25 10% 60%;
+    --sidebar-border: 25 12% 24%;
     --sidebar-active: 0 0% 100% / 0.1;
     --sidebar-accent: 239 84% 67%;
 
@@ -45,7 +45,7 @@
     --ai-gradient-via: 263 70% 50%;
     --ai-gradient-to: 292 84% 61%;
 
-    --status-green: 142 71% 45%;
+    --status-green: 160 60% 45%;
     --status-yellow: 38 92% 50%;
     --status-red: 0 84% 60%;
   }
@@ -57,7 +57,7 @@
   }
   body {
     @apply bg-background text-foreground;
-    background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+    background: linear-gradient(180deg, #FAFAF9 0%, #F5F5F4 100%);
     min-height: 100vh;
   }
 }
