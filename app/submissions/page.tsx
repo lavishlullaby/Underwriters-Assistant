@@ -41,7 +41,7 @@ export default function SubmissionsPage() {
         <table className="w-full text-left text-sm">
           <thead>
             <tr className="border-b border-border bg-muted/50">
-              <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+              <th className="w-[140px] px-4 py-3 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
                 Account
               </th>
               <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
@@ -59,7 +59,7 @@ export default function SubmissionsPage() {
               <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
                 Status
               </th>
-              <th className="px-4 py-3 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+              <th className="min-w-[260px] px-4 py-3 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
                 Next Action
               </th>
               <th className="px-4 py-3" />
@@ -96,7 +96,7 @@ export default function SubmissionsPage() {
                 <td className="px-4 py-3">
                   <StatusBadge status={sub.riskStatus} />
                 </td>
-                <td className="max-w-[200px] px-4 py-3 text-xs text-muted-foreground">
+                <td className="px-4 py-3 text-sm text-muted-foreground">
                   {sub.nextAction}
                 </td>
                 <td className="px-4 py-3">
