@@ -191,7 +191,7 @@ const janeMitchell: BrokerDetail = {
       riskStatus: "yellow",
       premium: "$340K",
       daysInPipeline: 18,
-      nextAction: "Chase signed application from school board",
+      nextAction: "Pending sign from school",
     },
   ],
 }
@@ -302,7 +302,7 @@ const tomBradley: BrokerDetail = {
       riskStatus: "red",
       premium: "$185K",
       daysInPipeline: 12,
-      nextAction: "UW decision on cold storage risk",
+      nextAction: "UW decision on cold storage",
     },
     {
       id: "s13",
@@ -311,7 +311,7 @@ const tomBradley: BrokerDetail = {
       riskStatus: "yellow",
       premium: "$210K",
       daysInPipeline: 11,
-      nextAction: "Broker response to quote -- follow up",
+      nextAction: "Broker response awaited",
     },
   ],
 }
@@ -535,7 +535,7 @@ const davidPark: BrokerDetail = {
       riskStatus: "yellow",
       premium: "$78K",
       daysInPipeline: 8,
-      nextAction: "Resolve sprinkler deficiency question",
+      nextAction: "Resolve sprinkler question",
     },
   ],
 }
@@ -625,7 +625,7 @@ const rachelKim: BrokerDetail = {
       riskStatus: "yellow",
       premium: "$520K",
       daysInPipeline: 3,
-      nextAction: "Request updated property schedule",
+      nextAction: "Request property schedule",
     },
     {
       id: "s12",
