@@ -107,7 +107,7 @@ export function AiChatPanel() {
           id: (Date.now() + 1).toString(),
           role: "assistant",
           content:
-            "I'm looking into that for you. Based on the current pipeline data, the Johnson Manufacturing file is blocked waiting on a Loss Control survey. The vendor has reported the insured isn't returning calls. Would you like me to draft an escalation email to the insured directly?",
+            "I'm looking into that for you. Based on the current pipeline data, the Johnson Mfg file is blocked waiting on a Loss Control survey. The vendor has reported the insured isn't returning calls. Would you like me to draft an escalation email to the insured directly?",
         },
       ])
     }, 1800)

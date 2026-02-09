@@ -117,7 +117,7 @@ const janeMitchell: BrokerDetail = {
       date: "Jan 28, 2026",
       label: "Email Thread",
       messageCount: 5,
-      subject: "New submission - ABC Corporation",
+      subject: "New submission - ABC Corp",
       summary:
         "Initial submission received. Jane asked for quick turnaround as client is actively shopping.",
     },
@@ -159,7 +159,7 @@ const janeMitchell: BrokerDetail = {
   activeSubmissions: [
     {
       id: "s1",
-      account: "ABC Corporation",
+      account: "ABC Corp",
       stage: "Quote",
       riskStatus: "red",
       premium: "$245K",
@@ -168,7 +168,7 @@ const janeMitchell: BrokerDetail = {
     },
     {
       id: "s5",
-      account: "Greenleaf Hospitality",
+      account: "Greenleaf Hosp",
       stage: "UW Review",
       riskStatus: "green",
       premium: "$180K",
@@ -177,7 +177,7 @@ const janeMitchell: BrokerDetail = {
     },
     {
       id: "s9",
-      account: "Downtown Plaza Retail",
+      account: "Downtown Plaza",
       stage: "Quote",
       riskStatus: "green",
       premium: "$98K",
@@ -186,7 +186,7 @@ const janeMitchell: BrokerDetail = {
     },
     {
       id: "s15",
-      account: "Maple Grove School District",
+      account: "Maple Grove Schools",
       stage: "Bind",
       riskStatus: "yellow",
       premium: "$340K",
@@ -217,9 +217,9 @@ const tomBradley: BrokerDetail = {
       date: "Feb 7, 2026",
       label: "Email Thread",
       messageCount: 2,
-      subject: "Pacific Retail Group - New Submission",
+      subject: "Pacific Retail - New Submission",
       summary:
-        "Tom submitted Pacific Retail Group with ACORD and SOV attached. Requested expedited intake given renewal deadline.",
+        "Tom submitted Pacific Retail with ACORD and SOV attached. Requested expedited intake given renewal deadline.",
     },
     {
       id: "t6",
@@ -279,7 +279,7 @@ const tomBradley: BrokerDetail = {
   activeSubmissions: [
     {
       id: "s2",
-      account: "Pacific Retail Group",
+      account: "Pacific Retail",
       stage: "Intake",
       riskStatus: "green",
       premium: "TBD",
@@ -288,7 +288,7 @@ const tomBradley: BrokerDetail = {
     },
     {
       id: "s6",
-      account: "Metro Logistics Inc.",
+      account: "Metro Logistics",
       stage: "Quote",
       riskStatus: "green",
       premium: "$312K",
@@ -297,7 +297,7 @@ const tomBradley: BrokerDetail = {
     },
     {
       id: "s8",
-      account: "Summit Logistics Warehouse",
+      account: "Summit Logistics",
       stage: "UW Review",
       riskStatus: "red",
       premium: "$185K",
@@ -306,7 +306,7 @@ const tomBradley: BrokerDetail = {
     },
     {
       id: "s13",
-      account: "Oakwood Apartments",
+      account: "Oakwood Apts",
       stage: "Quote",
       riskStatus: "yellow",
       premium: "$210K",
@@ -338,7 +338,7 @@ const sarahKim: BrokerDetail = {
       label: "Phone Call",
       duration: "10 min",
       summary:
-        "Sarah called to check on Johnson Manufacturing LC survey status. Expressed concern about the delay impacting her client relationship. Vendor reported insured not returning calls.",
+        "Sarah called to check on Johnson Mfg LC survey status. Expressed concern about the delay impacting her client relationship. Vendor reported insured not returning calls.",
       intelCaptured: "Client (Johnson) is considering self-insuring if process is too slow",
       actionTaken: "Escalated vendor to attempt direct site visit",
     },
@@ -348,7 +348,7 @@ const sarahKim: BrokerDetail = {
       date: "Feb 2, 2026",
       label: "Email Thread",
       messageCount: 2,
-      subject: "Johnson Manufacturing - Engineering Report ETA",
+      subject: "Johnson Mfg - Engineering Report ETA",
       summary:
         "Sarah asked about engineering report timeline. We confirmed it depends on LC survey completion.",
     },
@@ -400,7 +400,7 @@ const sarahKim: BrokerDetail = {
   activeSubmissions: [
     {
       id: "s3",
-      account: "Johnson Manufacturing",
+      account: "Johnson Mfg",
       stage: "UW Review",
       riskStatus: "yellow",
       premium: "$520K",
@@ -409,7 +409,7 @@ const sarahKim: BrokerDetail = {
     },
     {
       id: "s11",
-      account: "Heritage Manufacturing",
+      account: "Heritage Mfg",
       stage: "Intake",
       riskStatus: "green",
       premium: "TBD",
@@ -418,7 +418,7 @@ const sarahKim: BrokerDetail = {
     },
     {
       id: "s16",
-      account: "Lakeside Office Park",
+      account: "Lakeside Office",
       stage: "Intake",
       riskStatus: "red",
       premium: "TBD",
@@ -450,7 +450,7 @@ const davidPark: BrokerDetail = {
       label: "Phone Call",
       duration: "6 min",
       summary:
-        "David confirmed Westfield Properties has accepted the quote terms. Asked about binding timeline and whether we need anything else.",
+        "David confirmed Westfield Props has accepted the quote terms. Asked about binding timeline and whether we need anything else.",
       actionTaken: "Confirmed all docs are in, just need UW final sign-off",
     },
     {
@@ -459,7 +459,7 @@ const davidPark: BrokerDetail = {
       date: "Feb 5, 2026",
       label: "Email Thread",
       messageCount: 2,
-      subject: "RE: Westfield Properties - Signed Quote",
+      subject: "RE: Westfield Props - Signed Quote",
       summary:
         "David sent the signed quote back. Attached with client signature and requested effective date confirmation.",
     },
@@ -469,7 +469,7 @@ const davidPark: BrokerDetail = {
       date: "Feb 1, 2026",
       label: "Email Thread",
       messageCount: 3,
-      subject: "Westfield Properties - Quote Delivery",
+      subject: "Westfield Props - Quote Delivery",
       summary:
         "Quote delivered to David. He reviewed and said pricing is in line with expectations. Client reviewing over the weekend.",
       intelCaptured: "Client benchmarked against Chubb, we're 8% lower",
@@ -512,7 +512,7 @@ const davidPark: BrokerDetail = {
   activeSubmissions: [
     {
       id: "s4",
-      account: "Westfield Properties",
+      account: "Westfield Props",
       stage: "Bind",
       riskStatus: "yellow",
       premium: "$250K",
@@ -521,7 +521,7 @@ const davidPark: BrokerDetail = {
     },
     {
       id: "s10",
-      account: "Coastal Condo Association",
+      account: "Coastal Condo",
       stage: "Bind",
       riskStatus: "green",
       premium: "$156K",
@@ -530,7 +530,7 @@ const davidPark: BrokerDetail = {
     },
     {
       id: "s14",
-      account: "Precision Auto Parts",
+      account: "Precision Auto",
       stage: "UW Review",
       riskStatus: "yellow",
       premium: "$78K",
@@ -561,7 +561,7 @@ const rachelKim: BrokerDetail = {
       date: "Feb 5, 2026",
       label: "Email Thread",
       messageCount: 2,
-      subject: "Riverside Medical Center -- Incomplete SOV",
+      subject: "Riverside Medical -- Incomplete SOV",
       summary: "Notified Rachel that SOV is missing square footage for Buildings C and D. She confirmed she will follow up with the hospital facilities team.",
       actionTaken: "Flagged missing data and set follow-up for Feb 9",
     },
@@ -580,7 +580,7 @@ const rachelKim: BrokerDetail = {
       date: "Feb 2, 2026",
       label: "Email Thread",
       messageCount: 3,
-      subject: "New submission -- Trinity Church Properties",
+      subject: "New submission -- Trinity Church",
       summary: "Initial submission for three church properties. Rachel asked about our appetite for historic structures. We confirmed interest and requested full SOV.",
     },
   ],
@@ -620,7 +620,7 @@ const rachelKim: BrokerDetail = {
   activeSubmissions: [
     {
       id: "s7",
-      account: "Riverside Medical Center",
+      account: "Riverside Medical",
       stage: "Intake",
       riskStatus: "yellow",
       premium: "$520K",
@@ -629,7 +629,7 @@ const rachelKim: BrokerDetail = {
     },
     {
       id: "s12",
-      account: "Trinity Church Properties",
+      account: "Trinity Church",
       stage: "UW Review",
       riskStatus: "green",
       premium: "$45K",

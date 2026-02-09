@@ -29,7 +29,7 @@ const insights = [
     color: "text-red-600",
     items: [
       "ABC Corp quote expires Friday -- loss runs still missing. This is the highest-risk item in the pipeline.",
-      "Johnson Manufacturing LC survey is stuck at 4 days. Historical data shows surveys stalling beyond 5 days have a 40% chance of requiring reassignment.",
+      "Johnson Mfg LC survey is stuck at 4 days. Historical data shows surveys stalling beyond 5 days have a 40% chance of requiring reassignment.",
       "Compliance backlog is averaging 3-day delays this week -- 50% above normal.",
     ],
   },
@@ -41,7 +41,7 @@ const insights = [
     items: [
       "Consider proactively requesting loss runs from Jane Mitchell at intake -- her submissions miss them 60% of the time.",
       "Robert Chen is at 70% capacity. With 2 files in quoting, consider holding the next intake assignment for Maria Lopez.",
-      "Westfield Properties is ready for binding -- prioritize UW sign-off to close before authority expiration on Wednesday.",
+      "Westfield Props is ready for binding -- prioritize UW sign-off to close before authority expiration on Wednesday.",
     ],
   },
 ]

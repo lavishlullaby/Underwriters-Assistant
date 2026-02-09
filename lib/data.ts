@@ -102,7 +102,7 @@ export const priorities: PriorityItem[] = [
     id: "p2",
     type: "warning",
     title: "LC survey stuck Day 4",
-    description: "Vendor waiting on insured callback for Johnson Manufacturing site access.",
+    description: "Vendor waiting on insured callback for Johnson Mfg site access.",
     action: "/queue",
     actionLabel: "Contact Info",
     submissionId: "s3",
@@ -147,10 +147,10 @@ export const priorities: PriorityItem[] = [
 /* ── Submissions (16 total) ──────────────────────────────────────── */
 
 export const submissions: Submission[] = [
-  /* ── s1: ABC Corporation ── */
+  /* ── s1: ABC Corp ── */
   {
     id: "s1",
-    account: "ABC Corporation",
+    account: "ABC Corp",
     broker: "Jane Mitchell",
     brokerFirm: "Marsh & McLennan",
     uwAssigned: "Robert Chen",
@@ -184,17 +184,17 @@ export const submissions: Submission[] = [
       { date: "2026-02-01", action: "Submission received and intake completed", by: "Emily R." },
     ],
     aiSummary:
-      "ABC Corporation is a mid-size manufacturing company with 3 locations in the Midwest. Total insured value is $18.2M. The account has been with the carrier for 2 years with clean loss history. Current quote is competitive at $245K but cannot be finalized without 5-year loss runs from the broker.",
+      "ABC Corp is a mid-size manufacturing company with 3 locations in the Midwest. Total insured value is $18.2M. The account has been with the carrier for 2 years with clean loss history. Current quote is competitive at $245K but cannot be finalized without 5-year loss runs from the broker.",
     aiAnomalies: [
       "Year built 1965 for main facility but ProMetrix shows 2019 renovation -- confirmed gut rehab with broker.",
       "SOV lists sprinkler protection but COPE data shows partial coverage only at Location 2.",
       "D&B score trending down 12 points over last quarter -- monitor financial stability.",
     ],
   },
-  /* ── s2: Pacific Retail Group ── */
+  /* ── s2: Pacific Retail ── */
   {
     id: "s2",
-    account: "Pacific Retail Group",
+    account: "Pacific Retail",
     broker: "Tom Bradley",
     brokerFirm: "Aon Risk Solutions",
     uwAssigned: "Robert Chen",
@@ -224,10 +224,10 @@ export const submissions: Submission[] = [
       "New submission from Aon for a retail strip mall portfolio. 5 locations across California. Preliminary TIV of $32M. Broker has strong relationship history. Initial review looks clean.",
     aiAnomalies: [],
   },
-  /* ── s3: Johnson Manufacturing ── */
+  /* ── s3: Johnson Mfg ── */
   {
     id: "s3",
-    account: "Johnson Manufacturing",
+    account: "Johnson Mfg",
     broker: "Sarah Kim",
     brokerFirm: "Willis Towers Watson",
     uwAssigned: "Maria Lopez",
@@ -260,16 +260,16 @@ export const submissions: Submission[] = [
       { date: "2026-02-01", action: "UW review initiated", by: "Maria L." },
     ],
     aiSummary:
-      "Johnson Manufacturing is a large industrial account with 2 facilities. TIV $45M. All documents received but Loss Control survey is stuck. D&B score is strong at 82. Broker expects quote by end of next week.",
+      "Johnson Mfg is a large industrial account with 2 facilities. TIV $45M. All documents received but Loss Control survey is stuck. D&B score is strong at 82. Broker expects quote by end of next week.",
     aiAnomalies: [
       "High-hazard occupancy classification at Location 1 -- verify sprinkler adequacy.",
       "Claims frequency above industry average for similar class -- 3 WC claims in last 2 years.",
     ],
   },
-  /* ── s4: Westfield Properties ── */
+  /* ── s4: Westfield Props ── */
   {
     id: "s4",
-    account: "Westfield Properties",
+    account: "Westfield Props",
     broker: "David Park",
     brokerFirm: "Gallagher",
     uwAssigned: "Robert Chen",
@@ -302,13 +302,13 @@ export const submissions: Submission[] = [
       { date: "2026-01-28", action: "Quote approved by UW", by: "Robert C." },
     ],
     aiSummary:
-      "Westfield Properties is a commercial real estate portfolio with 4 office buildings. TIV $28M. Clean loss history. All documents and approvals in place. Ready for binding pending UW final sign-off. Binding authority expires Wednesday.",
+      "Westfield Props is a commercial real estate portfolio with 4 office buildings. TIV $28M. Clean loss history. All documents and approvals in place. Ready for binding pending UW final sign-off. Binding authority expires Wednesday.",
     aiAnomalies: [],
   },
-  /* ── s5: Greenleaf Hospitality ── */
+  /* ── s5: Greenleaf Hosp ── */
   {
     id: "s5",
-    account: "Greenleaf Hospitality",
+    account: "Greenleaf Hosp",
     broker: "Jane Mitchell",
     brokerFirm: "Marsh & McLennan",
     uwAssigned: "Maria Lopez",
@@ -339,13 +339,13 @@ export const submissions: Submission[] = [
       { date: "2026-02-02", action: "Submission intake completed", by: "Emily R." },
     ],
     aiSummary:
-      "Greenleaf Hospitality operates a chain of 6 boutique hotels. TIV $52M. Strong financial position with D&B score of 88. No anomalies detected in initial analysis.",
+      "Greenleaf Hosp operates a chain of 6 boutique hotels. TIV $52M. Strong financial position with D&B score of 88. No anomalies detected in initial analysis.",
     aiAnomalies: [],
   },
-  /* ── s6: Metro Logistics Inc. ── */
+  /* ── s6: Metro Logistics ── */
   {
     id: "s6",
-    account: "Metro Logistics Inc.",
+    account: "Metro Logistics",
     broker: "Tom Bradley",
     brokerFirm: "Aon Risk Solutions",
     uwAssigned: "Robert Chen",
@@ -381,10 +381,10 @@ export const submissions: Submission[] = [
       "Location 4 has flood zone AE designation -- ensure proper flood sub-limit.",
     ],
   },
-  /* ── s7: Riverside Medical Center ── */
+  /* ── s7: Riverside Medical ── */
   {
     id: "s7",
-    account: "Riverside Medical Center",
+    account: "Riverside Medical",
     broker: "Rachel Kim",
     brokerFirm: "Brown & Brown",
     uwAssigned: "Maria Lopez",
@@ -419,10 +419,10 @@ export const submissions: Submission[] = [
       "Need confirmation on sprinkler coverage for all buildings.",
     ],
   },
-  /* ── s8: Summit Logistics Warehouse ── */
+  /* ── s8: Summit Logistics ── */
   {
     id: "s8",
-    account: "Summit Logistics Warehouse",
+    account: "Summit Logistics",
     broker: "Tom Bradley",
     brokerFirm: "Aon Risk Solutions",
     uwAssigned: "Robert Chen",
@@ -460,10 +460,10 @@ export const submissions: Submission[] = [
       "Awaiting Loss Engineering review before pricing.",
     ],
   },
-  /* ── s9: Downtown Plaza Retail ── */
+  /* ── s9: Downtown Plaza ── */
   {
     id: "s9",
-    account: "Downtown Plaza Retail",
+    account: "Downtown Plaza",
     broker: "Jane Mitchell",
     brokerFirm: "Marsh & McLennan",
     uwAssigned: "Lisa Wong",
@@ -496,10 +496,10 @@ export const submissions: Submission[] = [
       "Single retail plaza with 15 tenants, well-maintained. Clean loss history. Lisa Wong approved terms yesterday. Ready to generate and send quote package.",
     aiAnomalies: [],
   },
-  /* ── s10: Coastal Condo Association ── */
+  /* ── s10: Coastal Condo ── */
   {
     id: "s10",
-    account: "Coastal Condo Association",
+    account: "Coastal Condo",
     broker: "David Park",
     brokerFirm: "Gallagher",
     uwAssigned: "Robert Chen",
@@ -533,10 +533,10 @@ export const submissions: Submission[] = [
       "48-unit oceanfront condo association. All subjectivities cleared. Premium payment received this morning. Policy issuance in progress.",
     aiAnomalies: [],
   },
-  /* ── s11: Heritage Manufacturing ── */
+  /* ── s11: Heritage Mfg ── */
   {
     id: "s11",
-    account: "Heritage Manufacturing",
+    account: "Heritage Mfg",
     broker: "Sarah Kim",
     brokerFirm: "Willis Towers Watson",
     uwAssigned: "Maria Lopez",
@@ -566,10 +566,10 @@ export const submissions: Submission[] = [
       "New submission received this morning. Light manufacturing -- metal fabrication. Two buildings on same campus. Submission appears complete.",
     aiAnomalies: [],
   },
-  /* ── s12: Trinity Church Properties ── */
+  /* ── s12: Trinity Church ── */
   {
     id: "s12",
-    account: "Trinity Church Properties",
+    account: "Trinity Church",
     broker: "Rachel Kim",
     brokerFirm: "Brown & Brown",
     uwAssigned: "Lisa Wong",
@@ -604,10 +604,10 @@ export const submissions: Submission[] = [
       "Main church built 1924 -- historic structure replacement cost may differ significantly from standard valuation.",
     ],
   },
-  /* ── s13: Oakwood Apartments ── */
+  /* ── s13: Oakwood Apts ── */
   {
     id: "s13",
-    account: "Oakwood Apartments",
+    account: "Oakwood Apts",
     broker: "Tom Bradley",
     brokerFirm: "Aon Risk Solutions",
     uwAssigned: "Robert Chen",
@@ -644,10 +644,10 @@ export const submissions: Submission[] = [
       "Quote aging 5 days -- win rate drops significantly after 7 days.",
     ],
   },
-  /* ── s14: Precision Auto Parts ── */
+  /* ── s14: Precision Auto ── */
   {
     id: "s14",
-    account: "Precision Auto Parts",
+    account: "Precision Auto",
     broker: "David Park",
     brokerFirm: "Gallagher",
     uwAssigned: "Maria Lopez",
@@ -684,10 +684,10 @@ export const submissions: Submission[] = [
       "Sprinkler heads in rack storage area need replacement per LC survey.",
     ],
   },
-  /* ── s15: Maple Grove School District ── */
+  /* ── s15: Maple Grove Schools ── */
   {
     id: "s15",
-    account: "Maple Grove School District",
+    account: "Maple Grove Schools",
     broker: "Jane Mitchell",
     brokerFirm: "Marsh & McLennan",
     uwAssigned: "Robert Chen",
@@ -724,10 +724,10 @@ export const submissions: Submission[] = [
       "School board meets Feb 12 -- if signature not obtained, bind will delay to March.",
     ],
   },
-  /* ── s16: Lakeside Office Park ── */
+  /* ── s16: Lakeside Office ── */
   {
     id: "s16",
-    account: "Lakeside Office Park",
+    account: "Lakeside Office",
     broker: "Sarah Kim",
     brokerFirm: "Willis Towers Watson",
     uwAssigned: "Lisa Wong",
@@ -775,7 +775,7 @@ export const queueItems: {
   lossControl: [
     {
       id: "q1",
-      fileName: "Johnson Manufacturing",
+      fileName: "Johnson Mfg",
       owner: "Mike Reynolds",
       status: "Blocked",
       daysInQueue: 4,
@@ -783,7 +783,7 @@ export const queueItems: {
     },
     {
       id: "q2",
-      fileName: "ABC Corporation",
+      fileName: "ABC Corp",
       owner: "Mike Reynolds",
       status: "Blocked",
       daysInQueue: 6,
@@ -791,7 +791,7 @@ export const queueItems: {
     },
     {
       id: "q3",
-      fileName: "Summit Logistics Warehouse",
+      fileName: "Summit Logistics",
       owner: "Mike Reynolds",
       status: "Scheduled",
       daysInQueue: 5,
@@ -799,7 +799,7 @@ export const queueItems: {
     },
     {
       id: "q4",
-      fileName: "Riverside Medical Center",
+      fileName: "Riverside Medical",
       owner: "Sarah Lin",
       status: "Scheduled",
       daysInQueue: 1,
@@ -807,7 +807,7 @@ export const queueItems: {
     },
     {
       id: "q5",
-      fileName: "Trinity Church Properties",
+      fileName: "Trinity Church",
       owner: "Mike Reynolds",
       status: "In Progress",
       daysInQueue: 2,
@@ -815,7 +815,7 @@ export const queueItems: {
     },
     {
       id: "q6",
-      fileName: "Greenleaf Hospitality",
+      fileName: "Greenleaf Hosp",
       owner: "Sarah Lin",
       status: "Complete",
       daysInQueue: 0,
@@ -823,7 +823,7 @@ export const queueItems: {
     },
     {
       id: "q7",
-      fileName: "Precision Auto Parts",
+      fileName: "Precision Auto",
       owner: "Sarah Lin",
       status: "Complete",
       daysInQueue: 0,
@@ -833,7 +833,7 @@ export const queueItems: {
   compliance: [
     {
       id: "q8",
-      fileName: "Maple Grove School District",
+      fileName: "Maple Grove Schools",
       owner: "Jennifer Wu",
       status: "Approved",
       daysInQueue: 0,
@@ -841,7 +841,7 @@ export const queueItems: {
     },
     {
       id: "q9",
-      fileName: "Westfield Properties",
+      fileName: "Westfield Props",
       owner: "Mike Davis",
       status: "In Review",
       daysInQueue: 2,
@@ -849,21 +849,21 @@ export const queueItems: {
     },
     {
       id: "q10",
-      fileName: "Metro Logistics Inc.",
+      fileName: "Metro Logistics",
       owner: "Mike Davis",
       status: "In Review",
       daysInQueue: 1,
     },
     {
       id: "q11",
-      fileName: "Coastal Condo Association",
+      fileName: "Coastal Condo",
       owner: "Jennifer Wu",
       status: "Approved",
       daysInQueue: 0,
     },
     {
       id: "q12",
-      fileName: "Oakwood Apartments",
+      fileName: "Oakwood Apts",
       owner: "Mike Davis",
       status: "In Review",
       daysInQueue: 3,
@@ -873,14 +873,14 @@ export const queueItems: {
   policyIssuance: [
     {
       id: "q13",
-      fileName: "Coastal Condo Association",
+      fileName: "Coastal Condo",
       owner: "Amy Chen",
       status: "In Progress",
       daysInQueue: 1,
     },
     {
       id: "q14",
-      fileName: "Westfield Properties",
+      fileName: "Westfield Props",
       owner: "Pending",
       status: "Pending",
       daysInQueue: 0,
@@ -888,14 +888,14 @@ export const queueItems: {
     },
     {
       id: "q15",
-      fileName: "Downtown Plaza Retail",
+      fileName: "Downtown Plaza",
       owner: "Amy Chen",
       status: "In Progress",
       daysInQueue: 0,
     },
     {
       id: "q16",
-      fileName: "Maple Grove School District",
+      fileName: "Maple Grove Schools",
       owner: "Bob Martinez",
       status: "Pending",
       daysInQueue: 0,

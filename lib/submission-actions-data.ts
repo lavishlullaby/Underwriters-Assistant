@@ -73,7 +73,7 @@ export const quotePackageDataMap: Record<string, QuotePackageData> = {
     ],
     coverLetter: `Dear Jane,
 
-Thank you for the opportunity to quote ABC Corporation. Please find attached our indication for this 3-location manufacturing portfolio.
+Thank you for the opportunity to quote ABC Corp. Please find attached our indication for this 3-location manufacturing portfolio.
 
 QUOTE SUMMARY:
 - Premium: $245,000
@@ -98,7 +98,7 @@ Sarah Chen`,
       to: "jane.mitchell@marshmclennan.com",
       cc: "lisa.park@marshmclennan.com",
       ccNote: "Jane's assistant, per her preferences",
-      subject: "ABC Corporation -- Quote Indication -- $245,000",
+      subject: "ABC Corp -- Quote Indication -- $245,000",
     },
   },
   s2: {
@@ -178,7 +178,7 @@ Sarah Chen`,
     ],
     coverLetter: `Dear Tom,
 
-Thank you for the opportunity to quote Metro Logistics Inc. We are pleased to provide the following indication for this 5-location warehouse and distribution portfolio.
+Thank you for the opportunity to quote Metro Logistics We are pleased to provide the following indication for this 5-location warehouse and distribution portfolio.
 
 QUOTE SUMMARY:
 - Premium: $312,000
@@ -194,7 +194,7 @@ Best regards,
 Sarah Chen`,
     delivery: {
       to: "tom.bradley@aon.com",
-      subject: "Metro Logistics Inc. -- Quote Indication -- $312,000",
+      subject: "Metro Logistics -- Quote Indication -- $312,000",
     },
   },
 }
@@ -210,10 +210,10 @@ export const brokerEmailDataMap: Record<string, BrokerEmailData> = {
     emailTypes: ["Chase Missing Docs", "Status Update", "Urgent Deadline", "Custom"],
     selectedType: "Chase Missing Docs",
     generatedEmail: {
-      subject: "ABC Corporation -- Need 5-year loss runs by Wednesday",
+      subject: "ABC Corp -- Need 5-year loss runs by Wednesday",
       body: `Hi Jane,
 
-Quick follow-up on ABC Corporation. We're in great shape to finalize the quote at $245,000, but I still need the 5-year loss runs from the prior carrier to complete the file.
+Quick follow-up on ABC Corp. We're in great shape to finalize the quote at $245,000, but I still need the 5-year loss runs from the prior carrier to complete the file.
 
 Could you check with your client on the status? If we can get these by Wednesday, I can have the final quote package to you Thursday, well ahead of Friday's expiration.
 
@@ -244,10 +244,10 @@ Sarah`,
     emailTypes: ["Acknowledgment", "Request Missing Docs", "Status Update", "Custom"],
     selectedType: "Acknowledgment",
     generatedEmail: {
-      subject: "Pacific Retail Group -- Submission Received",
+      subject: "Pacific Retail -- Submission Received",
       body: `Hi Tom,
 
-Thanks for sending over Pacific Retail Group. I've received the submission and will have it to underwriting shortly.
+Thanks for sending over Pacific Retail. I've received the submission and will have it to underwriting shortly.
 
 Quick confirmation of what's on file:
 [check] ACORD 125/140
@@ -270,10 +270,10 @@ Sarah`,
     emailTypes: ["Chase Missing Docs", "LC Survey Blocker", "Status Update", "Custom"],
     selectedType: "LC Survey Blocker",
     generatedEmail: {
-      subject: "Johnson Manufacturing -- Need Help Reaching Your Client",
+      subject: "Johnson Mfg -- Need Help Reaching Your Client",
       body: `Hi Sarah,
 
-I need your help unblocking Johnson Manufacturing. Our loss control vendor (ABC Inspections) has tried to reach your client 5 times since Feb 3 to schedule the required survey, but hasn't been able to connect.
+I need your help unblocking Johnson Mfg. Our loss control vendor (ABC Inspections) has tried to reach your client 5 times since Feb 3 to schedule the required survey, but hasn't been able to connect.
 
 Vendor contact attempts:
 - Feb 3: Called, left voicemail
@@ -309,10 +309,10 @@ P.S. Vendor contact for scheduling: ABC Inspections, (555) 234-5678, ref #LC-202
     emailTypes: ["Bind Confirmation", "Subjectivity Status", "Chase Signature", "Custom"],
     selectedType: "Chase Signature",
     generatedEmail: {
-      subject: "Westfield Properties -- Ready to Bind, Awaiting Final Docs",
+      subject: "Westfield Props -- Ready to Bind, Awaiting Final Docs",
       body: `Hi David,
 
-Great news -- we're ready to bind Westfield Properties. Just need a couple of final items:
+Great news -- we're ready to bind Westfield Props. Just need a couple of final items:
 
 Outstanding items for binding:
 [ ] Signed application (sent Feb 8 -- can you check with client?)
@@ -343,10 +343,10 @@ Sarah`,
     emailTypes: ["Status Update", "Request Additional Info", "Custom"],
     selectedType: "Status Update",
     generatedEmail: {
-      subject: "Greenleaf Hospitality -- Status Update",
+      subject: "Greenleaf Hosp -- Status Update",
       body: `Hi Jane,
 
-Quick update on Greenleaf Hospitality -- file is with our underwriter Maria Lopez for final review. All data orders are complete and the file looks clean.
+Quick update on Greenleaf Hosp -- file is with our underwriter Maria Lopez for final review. All data orders are complete and the file looks clean.
 
 Current timeline:
 - UW review: In progress (expect complete by Feb 12)
@@ -367,7 +367,7 @@ Sarah`,
     emailTypes: ["Deliver Quote", "Follow-up on Decision", "Custom"],
     selectedType: "Follow-up on Decision",
     generatedEmail: {
-      subject: "Metro Logistics Inc. -- Checking In on Quote",
+      subject: "Metro Logistics -- Checking In on Quote",
       body: `Hi Tom,
 
 Wanted to check in on Metro Logistics. We delivered the quote on Feb 5 at $312,000 -- has your client had a chance to review?
@@ -452,7 +452,7 @@ Recommend: Option 3 first, then consider Option 2 if still no response by Feb 12
 
 Question: Would you accept a desktop review for this account given clean loss history?`,
     fileContext: [
-      { label: "Insured", value: "Johnson Manufacturing" },
+      { label: "Insured", value: "Johnson Mfg" },
       { label: "TIV", value: "$12.5M" },
       { label: "Loss history", value: "Clean (3 years)" },
       { label: "Prior carrier", value: "Travelers (non-renewed for premium, not loss)" },
@@ -469,7 +469,7 @@ Question: Would you accept a desktop review for this account given clean loss hi
       { label: "Custom", value: "custom" },
     ],
     defaultReason: "bind-signoff",
-    prefilledMessage: `Westfield Properties ready to bind. All subjectivities cleared:
+    prefilledMessage: `Westfield Props ready to bind. All subjectivities cleared:
 [check] LC survey complete
 [check] Financials received
 [pending] Signed app expected today per broker
